@@ -1,192 +1,174 @@
 export const config = {
     developer: {
-        name: "Redoyanul",
-        fullName: "Redoyanul Haque",
-        title: "AI & Full-Stack Developer",
-        description: "AI & Full-Stack Developer building intelligent systems and modern web applications. Passionate about machine learning, deep learning, and creating next-gen autonomous agents."
+        name: "Eshan",
+        fullName: "Eshan Bhardwaj",
+        title: "Software Engineer & Full-Stack Developer",
+        description: "Aspiring software development engineer and full-stack generalist with experience building, testing, deploying, and maintaining web products. Skilled in React, TypeScript, Node.js, REST APIs, databases, CI/CD, Python, and AI-assisted development."
     },
     social: {
-        github: "red1-for-hek",
-        email: "redoyanul1234@gmail.com",
-        location: "Bangladesh"
+        github: "Eshan1901",
+        email: "ebhardwaj87@gmail.com",
+        phone: "+91 8200712178",
+        location: "Chennai, India"
     },
     about: {
         title: "About Me",
-        description: "I am a self-taught AI & Full-Stack Developer from Bangladesh. I build intelligent systems, chatbots, and modern web applications. My expertise includes Machine Learning, Deep Learning, NLP, and Full-Stack Web Development with React, Node.js, and Python. Currently building next-gen AI Agents and JARVIS-like Personal Assistants. I have a competitive programming mindset and a deep passion for automation. Code is poetry, AI is the canvas."
+        description: "I am an aspiring Software Development Engineer and Full-Stack Generalist pursuing B.Tech in Computer Science and Engineering at SRM Institute of Science and Technology (CGPA: 8.83). I have hands-on experience building, testing, deploying, and maintaining web products with React, TypeScript, Node.js, REST APIs, databases, and CI/CD. With 500+ problems solved on LeetCode (1700 rating) and a state-level chess ranking (1643 ELO), I bring disciplined problem-solving and end-to-end ownership to engineering reliable software."
     },
-    experiences: [
+    education: {
+        degree: "B.Tech, Computer Science and Engineering",
+        institution: "SRM Institute of Science and Technology",
+        period: "2023 – 2027",
+        location: "Chennai, India",
+        cgpa: "8.83"
+    },
+    certifications: [
         {
-            position: "Learning Something New",
-            company: "Self-Development",
-            period: "2025 - Present",
-            location: "Bangladesh",
-            description: "Continuously exploring emerging technologies, researching advanced AI systems, and pushing the boundaries of what's possible in tech.",
-            responsibilities: [
-                "Researching cutting-edge AI and ML technologies",
-                "Experimenting with new frameworks and tools",
-                "Contributing to open-source projects",
-                "Building innovative personal projects"
-            ],
-            technologies: ["Research", "Innovation", "Open Source", "New Tech"]
+            title: "SAP Certified",
+            subTitle: "ABAP Backend Development",
+            issuer: "SAP"
         },
         {
-            position: "AI Engineer",
-            company: "Freelance & Projects",
-            period: "2025",
-            location: "Bangladesh",
-            description: "Developing intelligent AI systems, chatbots, and machine learning solutions. Building next-gen conversational AI agents and JARVIS-like personal assistants.",
+            title: "Microsoft Certified",
+            subTitle: "GitHub Actions",
+            issuer: "Microsoft"
+        }
+    ],
+    achievements: [
+        "Solved 500+ coding problems on LeetCode (70+ LeetCode Hard, 1700 rating)",
+        "Led the Velocity Team at Coding Ninjas SRM as Accelerator Program member",
+        "Top 10 finalist at House of Coders 2024",
+        "State-level chess ranking with an ELO rating of 1643"
+    ],
+    experiences: [
+        {
+            position: "Web Development Intern",
+            company: "SSS Patna",
+            period: "Jun 2026 – Jul 2026",
+            location: "Remote",
+            description: "Translated product requirements for InternshipWala.com into customer-facing features and functional web deliverables. Tested and validated rapid updates, debugged issues, and iterated on fixes to maintain platform reliability and release quality.",
             responsibilities: [
-                "Building AI-powered chatbots and conversational agents",
-                "Developing machine learning models with TensorFlow and PyTorch",
-                "Working with LLMs and transformer architectures",
-                "Creating autonomous AI systems and automation tools"
+                "Translated product requirements for InternshipWala.com into customer-facing features",
+                "Tested and validated rapid updates, debugging issues across environments",
+                "Iterated on fixes to maintain platform reliability and release quality",
+                "Collaborated with cross-functional stakeholders with end-to-end ownership"
             ],
-            technologies: ["Python", "TensorFlow", "PyTorch", "LLMs", "NLP", "AI Agents"]
+            technologies: ["React", "TypeScript", "REST APIs", "Debugging", "Web Products"]
         },
         {
             position: "Full-Stack Developer",
-            company: "Freelance & Projects",
-            period: "2024",
-            location: "Bangladesh",
-            description: "Built complete web applications from frontend to backend. Developed responsive UIs, RESTful APIs, and database solutions for various clients and projects.",
+            company: "Gnosis Press (Startup)",
+            period: "2025",
+            location: "Remote",
+            description: "Owned the end-to-end design, development, deployment, and maintenance of the startup’s live MERN-stack platform (gnosispress.org). Worked directly with publishing stakeholders to shape features and implemented CI/CD workflows to automate releases.",
             responsibilities: [
-                "Developing full-stack web applications using React and Node.js",
-                "Building RESTful APIs and integrating databases",
-                "Creating responsive and interactive user interfaces",
-                "Deploying and maintaining web applications"
+                "Owned end-to-end design, development, deployment, and maintenance of live MERN platform",
+                "Collaborated with publishing stakeholders to shape features and improve site accessibility",
+                "Implemented CI/CD workflows to automate releases and reduce maintenance overhead",
+                "Engineered responsive user interfaces and robust backend services"
             ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "Next.js", "TypeScript"]
+            technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "CI/CD", "MERN Stack"]
         },
         {
-            position: "Python Developer",
-            company: "Self-Taught & Projects",
-            period: "2023",
-            location: "Bangladesh",
-            description: "Dove deep into Python programming, building automation scripts, bots, and mastering the fundamentals of software development and problem-solving.",
+            position: "Volunteer Developer",
+            company: "Ahinsadham NGO",
+            period: "2025",
+            location: "Kutch, India",
+            description: "Built a digital operations platform for animal rescue, veterinary treatment management, and donation tracking. Mapped real-world care processes into structured application workflows, reducing manual coordination for injured and abandoned animals.",
             responsibilities: [
-                "Learning Python programming and core concepts",
-                "Building automation scripts and Discord bots",
-                "Exploring data structures and algorithms",
-                "Participating in competitive programming"
+                "Built digital operations platform for animal rescue and vet treatment management",
+                "Developed donation tracking and medical record workflows",
+                "Mapped real-world care processes into structured digital forms",
+                "Reduced manual coordination overhead for animal welfare staff"
             ],
-            technologies: ["Python", "Automation", "Scripting", "Discord.py", "Problem Solving"]
+            technologies: ["React", "Node.js", "Database Management", "Workflow Automation"]
         },
         {
-            position: "Graphic Designer",
-            company: "Freelance",
-            period: "2022",
-            location: "Bangladesh",
-            description: "Started my creative journey as a graphic designer, creating logos, banners, and visual content. This sparked my passion for technology and digital creation.",
+            position: "Technical Lead (Velocity Team)",
+            company: "Coding Ninjas SRM",
+            period: "2023 - 2025",
+            location: "Chennai, India",
+            description: "Led the Velocity Team after progressing from technical member; coordinated technical initiatives as an Accelerator Program member. Recognized as a Top 10 finalist at House of Coders 2024.",
             responsibilities: [
-                "Designing logos and brand identity materials",
-                "Creating social media graphics and banners",
-                "Working with clients on creative projects",
-                "Learning design principles and visual aesthetics"
+                "Led the Velocity Team and coordinated club technical initiatives",
+                "Mentored student developers in Data Structures, Algorithms, and development",
+                "Top 10 finalist at House of Coders 2024",
+                "Maintained active competitive programming community"
             ],
-            technologies: ["Photoshop", "Illustrator", "Canva", "Figma", "Visual Design"]
+            technologies: ["Leadership", "DSA", "Problem Solving", "Mentorship", "Algorithms"]
         },
         {
-            position: "Microsoft Office",
-            company: "Begin Learning",
-            period: "2021",
-            location: "Bangladesh",
-            description: "Started my journey into the digital world by learning Microsoft Office tools. This foundational step introduced me to computers and sparked my curiosity for technology.",
+            position: "B.Tech in Computer Science & Engineering",
+            company: "SRM Institute of Science and Technology",
+            period: "2023 - 2027",
+            location: "Chennai, India",
+            description: "Pursuing B.Tech in CSE with a CGPA of 8.83. Strong foundation in Data Structures, Algorithms, Computer Networks, Operating Systems, and DBMS. State-level chess ranking with 1643 ELO.",
             responsibilities: [
-                "Learning Microsoft Word, Excel, and PowerPoint",
-                "Creating documents and presentations",
-                "Understanding basic computer operations",
-                "Building foundational digital skills"
+                "Maintained academic excellence with 8.83 CGPA",
+                "Mastered CS fundamentals: DSA, OODP, Computer Networks, OS, and DBMS",
+                "Solved 500+ LeetCode problems (70+ Hard, 1700 rating)",
+                "State-level chess player with 1643 ELO rating"
             ],
-            technologies: ["MS Word", "MS Excel", "MS PowerPoint", "Computer Basics"]
+            technologies: ["DSA", "OODP", "Computer Networks", "OS", "DBMS", "LeetCode"]
         }
     ],
     projects: [
         {
             id: 1,
-            title: "Drishti",
-            category: "AI / LLM",
-            technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
-            image: "/images/Drishti.png",
-            description: "Bangladesh's first intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and multilingual support including Bengali.",
-            link: "https://huggingface.co/red1-for-hek/drishti-ilm-x1"
+            title: "Social",
+            category: "Full-Stack Web",
+            technologies: "React.js, Node.js, Express.js, MongoDB, REST APIs",
+            image: "/images/social_platform.jpg",
+            description: "Engineered a full-stack community platform supporting authenticated user accounts, post sharing, likes, comments, and paginated content feeds with MongoDB-backed REST APIs.",
+            link: "https://socialapp-j6z3.vercel.app/login"
         },
         {
             id: 2,
-            title: "VoteChain",
-            category: "Blockchain",
-            technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
-            image: "/images/VoteChain.png",
-            description: "A decentralized election system built on blockchain technology ensuring transparent, tamper-proof, and verifiable voting. Features smart contracts for vote integrity and real-time result tracking.",
-            link: "https://github.com/red1-for-hek/smart-election-by-blockchain"
+            title: "Cloud Task Scheduling Simulator",
+            category: "Cloud & Machine Learning",
+            technologies: "CloudSim Plus, LightGBM, Hugging Face, Java, Python",
+            image: "/images/cloud_scheduler.jpg",
+            description: "Engineered 13 features from 400,000+ raw Google Borg trace records. Trained a LightGBM quantile regression model with pinball loss estimating P10/P50/P90 tail risk for CPU, memory, and task duration, reducing SLA violations by 84.7% and wait times by 83.9%.",
+            link: "https://github.com/Eshan1901/Cloud-Simulation-Using-ML"
+        },
+        {
+            id: 3,
+            title: "TeachLoop",
+            category: "EdTech Platform",
+            technologies: "React 18, TypeScript, Tailwind CSS, Shadcn/ui, Appwrite, Vite",
+            image: "/images/teachloop.jpg",
+            description: "A modern educational platform that connects teachers and learners through an intuitive course creation and management system. Features Appwrite authentication, database, storage, search, interactive progress dashboard, and real-time notifications.",
+            link: "https://teachloop-ten.vercel.app/"
         },
         {
             id: 4,
-            title: "Flood Spaces 2.0",
-            category: "AI / ML",
-            technologies: "Python, TensorFlow, Pandas, React, FastAPI, GIS",
-            image: "/images/FloodSpaces.png",
-            description: "Predicts flood risks across Bangladesh up to one month in advance and sends early alerts to help people prepare.",
-            link: "https://github.com/red1-for-hek/Flood-Spaces-2.0"
-        },
-        {
-            id: 5,
-            title: "Phoenix 3.0",
-            category: "AI Assistant",
-            technologies: "Python, Speech Recognition, PyAutoGUI, OpenAI API, Tkinter",
-            image: "/images/Phoenix3.0.png",
-            description: "A JARVIS-inspired personal AI desktop assistant. Controls system functions, manages tasks, answers queries, automates workflows, and provides voice-activated computing experience.",
-            link: "https://github.com/red1-for-hek/phoenix3.0"
-        },
-        {
-            id: 6,
-            title: "RedxChess",
-            category: "AI / Game Engine",
-            technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
-            image: "/images/RedxChess.png",
-            description: "A high-performance chess engine rated 3640 ELO. Features advanced search algorithms, neural network evaluation, and optimized bitboard representation for lightning-fast move generation.",
-            link: "/play"
-        },
-        {
-            id: 7,
-            title: "Prodesk",
-            category: "E-commerce",
-            technologies: "React, Node.js, MongoDB, Express, Stripe",
-            image: "/images/Prodesk.png",
-            description: "A complete e-commerce platform with secure checkout and smooth product browsing.",
-            link: "https://github.com/red1-for-hek/prodesk"
-        },
-        {
-            id: 8,
-            title: "HekTools",
-            category: "Security / Android",
-            technologies: "Kotlin, Android SDK, Firebase, Python, Encryption",
-            image: "/images/hektools.png",
-            description: "An advanced Android monitoring and security research tool. Features remote device management, activity logging, and encrypted data transmission for security testing purposes.",
-            link: ""
+            title: "Playbox",
+            category: "Web App / Gaming",
+            technologies: "React.js, JavaScript, Tailwind CSS, Vercel",
+            image: "/images/playbox.jpg",
+            description: "A digital game library & subscription platform inspired by Steam and Spotify. Features curated game exploration, genre filtering/sorting, 'Your Library' collection manager, and a sleek modern dark/light responsive UI.",
+            link: "https://play-box-indol.vercel.app/"
         }
     ],
     contact: {
-        email: "redoyanul1234@gmail.com",
-        github: "https://github.com/red1-for-hek",
-        linkedin: "https://linkedin.com/in/red1-for-hek",
-        twitter: "https://x.com/red_1_ul",
-        facebook: "https://www.facebook.com/redoyanulhaque.hacker.official",
-        instagram: "https://www.instagram.com/red_1_ul"
+        email: "ebhardwaj87@gmail.com",
+        phone: "+91 8200712178",
+        github: "https://github.com/Eshan1901",
+        linkedin: "https://www.linkedin.com/in/eshan-bhardwaj-88947328a/",
+        instagram: "https://www.instagram.com/eshanrizzznext"
     },
     skills: {
         develop: {
-            title: "AI DEVELOPER",
-            description: "Building intelligent systems & AI solutions",
-            details: "Developing AI agents, chatbots, and machine learning models using Python, TensorFlow, and PyTorch. Specializing in LLMs, NLP, deep learning, and autonomous systems.",
-            tools: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Scikit-learn", "LLMs", "NLP", "Deep Learning", "Chatbots", "AI Agents"]
+            title: "FULL-STACK & BACKEND",
+            description: "Building scalable web products & robust APIs",
+            details: "Full-stack generalist skilled in building, testing, deploying, and maintaining web products with React, Next.js, Node.js, Express.js, and databases (MongoDB, SQL). Experience with REST APIs, authentication, CI/CD, and AI-assisted development.",
+            tools: ["React.js", "Next.js", "Node.js", "Express.js", "TypeScript", "JavaScript", "MongoDB", "REST APIs", "Tailwind CSS", "Docker", "CI/CD", "GitHub Actions"]
         },
         design: {
-            title: "FULL-STACK",
-            description: "Modern web development & scalable applications",
-            details: "Building responsive and performant web applications using React, Next.js, Node.js, and databases. Creating seamless user experiences with modern UI/UX principles.",
-            tools: ["React", "Next.js", "Node.js", "TypeScript", "MongoDB", "PostgreSQL", "TailwindCSS", "REST APIs", "Docker", "Git"]
+            title: "DATA, ML & CORE CS",
+            description: "Algorithms, Machine Learning & CS Fundamentals",
+            details: "Deep CS foundation with 500+ LeetCode problems solved (1700 rating). Strong in Data Structures, Algorithms, OODP, Computer Networks, OS, and DBMS. Experienced in Python data science, Machine Learning (Scikit-learn, LightGBM, Pandas, NumPy), and cloud simulation.",
+            tools: ["Python", "C/C++", "DSA", "SQL", "Machine Learning", "LightGBM", "Scikit-learn", "Pandas", "NumPy", "CloudSim Plus", "Git", "Appwrite"]
         }
     }
 };
-
-

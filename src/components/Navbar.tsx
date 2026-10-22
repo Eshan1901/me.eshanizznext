@@ -4,6 +4,7 @@ import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
 import Lenis from "lenis";
 import "./styles/Navbar.css";
+import { config } from "../config";
 
 gsap.registerPlugin(ScrollTrigger);
 export let lenis: Lenis | null = null;
@@ -17,20 +18,24 @@ const Navbar = () => {
       orientation: "vertical",
       gestureOrientation: "vertical",
       smoothWheel: true,
-      wheelMultiplier: 1.7,
-      touchMultiplier: 2,
+      wheelMultiplier: 1.1,
+      touchMultiplier: 1.5,
       infinite: false,
     });
 
-    // Start paused
-    lenis.stop();
-
+    let rafId: number;
     // Handle smooth scroll animation frame
     function raf(time: number) {
       lenis?.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     }
-    requestAnimationFrame(raf);
+    rafId = requestAnimationFrame(raf);
+
+    // Auto-resume scrolling after short timeout in case initialFX took time
+    const scrollTimeout = setTimeout(() => {
+      lenis?.start();
+      document.body.style.overflowY = "auto";
+    }, 1500);
 
     // Handle navigation links
     let links = document.querySelectorAll(".header ul a");
@@ -46,7 +51,7 @@ const Navbar = () => {
             if (target) {
               lenis.scrollTo(target, {
                 offset: 0,
-                duration: 1.5,
+                duration: 1.2,
               });
             }
           }
@@ -55,26 +60,31 @@ const Navbar = () => {
     });
 
     // Handle resize
-    window.addEventListener("resize", () => {
+    const onResize = () => {
       lenis?.resize();
-    });
+    };
+    window.addEventListener("resize", onResize);
 
     return () => {
+      clearTimeout(scrollTimeout);
+      cancelAnimationFrame(rafId);
+      window.removeEventListener("resize", onResize);
       lenis?.destroy();
+      lenis = null;
     };
   }, []);
   return (
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          RH
+          EB
         </a>
         <a
-          href="mailto:redoyanul1234@gmail.com"
+          href={`mailto:${config.contact.email}`}
           className="navbar-connect"
           data-cursor="disable"
         >
-          redoyanul1234@gmail.com
+          {config.contact.email}
         </a>
         <ul>
           <li>

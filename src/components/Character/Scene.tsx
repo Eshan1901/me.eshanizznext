@@ -68,12 +68,17 @@ const Scene = () => {
             setTimeout(() => {
               light.turnOnLights();
               animations.startIntro();
-            }, 2500);
+            }, 400);
           });
           window.addEventListener("resize", () =>
             handleResize(renderer, camera, canvasDiv, character)
           );
+        } else {
+          progress.clear();
         }
+      }).catch((err) => {
+        console.warn("Character load bypassed:", err);
+        progress.clear();
       });
 
       let mouse = { x: 0, y: 0 },

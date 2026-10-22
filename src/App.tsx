@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./App.css";
@@ -38,11 +38,7 @@ const App = () => {
         />
         <Route
           path="/play"
-          element={
-            <Suspense fallback={<div>Loading...</div>}>
-              <Play />
-            </Suspense>
-          }
+          element={<Navigate to="/" replace />}
         />
       </Routes>
       <Analytics />

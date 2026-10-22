@@ -68,10 +68,24 @@ const Contact = () => {
                 {config.contact.email}
               </a>
             </p>
-            <h4>Location</h4>
-            <p>
-              <span>{config.social.location}</span>
-            </p>
+            {config.social.phone && (
+              <>
+                <h4>Phone</h4>
+                <p>
+                  <a href={`tel:${config.social.phone}`} data-cursor="disable">
+                    {config.social.phone}
+                  </a>
+                </p>
+              </>
+            )}
+            {config.social.location && (
+              <>
+                <h4>Location</h4>
+                <p>
+                  <span>{config.social.location}</span>
+                </p>
+              </>
+            )}
           </div>
           <div className="contact-box">
             <h4>Social</h4>
@@ -91,25 +105,7 @@ const Contact = () => {
               data-cursor="disable"
               className="contact-social"
             >
-              Linkedin <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Twitter <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Facebook <MdArrowOutward />
+              LinkedIn <MdArrowOutward />
             </a>
             <a
               href={config.contact.instagram}

@@ -17,8 +17,8 @@ export const LoadingContext = createContext<LoadingType | null>(null);
 
 export const LoadingProvider = ({ children }: PropsWithChildren) => {
   const [isLoading, setIsLoading] = useState(() => {
-    // Skip loading on mobile
-    if (window.innerWidth <= 768) return false;
+    // Skip loading on mobile and tablet where 3D character is disabled
+    if (window.innerWidth <= 1024) return false;
     return true;
   });
   const [loading, setLoading] = useState(0);
@@ -28,20 +28,31 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
     setIsLoading,
     setLoading,
   };
+
   useEffect(() => {
-    // Auto-start animations on mobile since there's no 3D model
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 1024) {
       import("../components/utils/initialFX").then((module) => {
         if (module.initialFX) {
           setTimeout(() => {
             module.initialFX();
-          }, 100);
+          }, 50);
         }
       });
+    } else {
+      // Failsafe timer: ensure loading never hangs beyond 2.5s on desktop
+      const failsafe = setTimeout(() => {
+        setLoading(100);
+        setTimeout(() => {
+          setIsLoading(false);
+          import("../components/utils/initialFX").then((module) => {
+            module.initialFX?.();
+          });
+        }, 500);
+      }, 2500);
+
+      return () => clearTimeout(failsafe);
     }
   }, []);
-
-  useEffect(() => {}, [loading]);
 
   return (
     <LoadingContext.Provider value={value as LoadingType}>
