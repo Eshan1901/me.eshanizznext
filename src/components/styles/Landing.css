@@ -42,10 +42,11 @@
 
   .landing-intro h1 {
     word-spacing: 0.1em;
-    font-size: 32px !important;
-    /* Ensure nice size */
+    font-size: clamp(26px, 8vw, 36px) !important;
     line-height: 1.2 !important;
     margin: 0;
+    white-space: normal;
+    overflow-wrap: break-word;
   }
 
   /* Ensure name parts display correctly */
@@ -125,26 +126,23 @@
 
   /* Show mobile photo */
   .mobile-photo {
-    display: block;
+    display: flex;
+    justify-content: center;
     position: relative !important;
     width: 100%;
-    max-width: 380px;
-    margin: 0 auto;
-    z-index: 1;
     order: 2;
-    /* Second: Photo */
-    /* Add fade mask to bottom */
-    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    margin: 10px auto;
     pointer-events: none;
-    transform: none !important;
   }
 
   .mobile-photo img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 0 40px rgba(194, 164, 255, 0.4));
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    border: 3px solid rgba(196, 129, 255, 0.6);
+    box-shadow: 0 0 40px rgba(196, 129, 255, 0.35), 0 0 80px rgba(196, 129, 255, 0.15);
   }
 }
 
@@ -380,7 +378,7 @@
 }
 
 .landing-h2-info {
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .landing-h2-info-1 {
